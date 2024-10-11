@@ -164,7 +164,7 @@ $(function() {
                         <div id="login-tab-content" class="active">
                           <form class="login-form" action="/login" method="post">
                             <input type="text" class="input"  name="id" id="user_login" autocomplete="off" placeholder="아이디를 입력하세요" required>
-                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요">
+                            <input type="password" class="input" name="password" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요">
                             <input type="submit" class="button" value="Login">
                           </form>
                           <div class="help-action">
@@ -176,12 +176,15 @@ $(function() {
                             <!-- TABS CONTENT SIGNUP -->
                         <div id="signup-tab-content">
                           <form class="signup-form" action="" method="post">
-                     		<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
-                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
-                            <input type="checkbox" class="checkbox" checked id="remember_me">      
-                            <input type="submit" class="button" value="Sign Up">
+                     		<input type="text" class="input" id="user_login" autocomplete="off" placeholder="아이디를 입력하세요">
+                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요">
+                            <input type="submit" class="button" value="Login">
                           </form>
-             
+                          <div class="help-action">
+                            <p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">비밀번호찾기</a></p>
+                            <p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">아이디 찾기 </a></p>
+                            <p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">회원가입 </a></p>
+                          </div>             
                         </div>
                       </div>
                   </div>

@@ -5,12 +5,14 @@
 	
 <configuration>
 	<typeAliases>
+		<typeAlias type="com.kosta.devpanda.dto.person" alias="person"/>
+
 	<!-- 	<typeAlias type="com.kosta.devpanda.dto.auction" alias="acution"/>
 		<typeAlias type="com.kosta.devpanda.dto.bid" alias="bid"/>
 		<typeAlias type="com.kosta.devpanda.dto.blacklist" alias="blaklist"/>
 		<typeAlias type="com.kosta.devpanda.dto.company" alias="company"/>
 		<typeAlias type="com.kosta.devpanda.dto.emailCertification" alias="emailCertification"/>
-		<typeAlias type="com.kosta.devpanda.dto.person" alias="person"/>
 		<typeAlias type="com.kosta.devpanda.dto.transaction" alias="transaction"/> -->
+
 	</typeAliases>
 </configuration>
