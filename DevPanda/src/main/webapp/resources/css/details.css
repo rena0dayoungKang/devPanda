@@ -1,0 +1,541 @@
+@charset "UTF-8";
+.container {
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px;
+	margin: 0 50px 50px 50px;
+}
+
+.title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.transaction-id {
+	text-align: center;
+	color: #aaa;
+	margin-bottom: 20px;
+}
+
+.user-info-container {
+	background-color: #f9f9f9;
+	border-radius: 30px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.user-info {
+	width: 100%;
+	height: auto;
+}
+
+/* 수정 */
+.user-info .user {
+	/* width: 48%; */
+	text-align: center;
+	line-height: 30px;
+}
+
+.user_type {
+	color: #cccccc; /* 수정 */
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.user img {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px; /* 수정 */
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/* .user p 삭제 */
+.bold {
+	font-weight: bold;
+}
+
+.minmax {
+	padding: 0;
+	width: 100%;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter_bind {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	font-size: 14px;
+	position: relative;
+}
+
+.filter_bind  .column {
+	width: 48%;
+}
+
+.filter_bind  dl {
+	display: flex;
+	margin: 10px 0;
+	align-items: center; /* dt와 dd를 수직 정렬 */
+}
+
+.filter_bind  dt {
+	font-weight: bold;
+	color: #555;
+	flex-shrink: 0; /* dt의 크기를 고정하여 공백 문제 해결 */
+	margin-right: 10px; /* dt와 dd 사이의 간격 */
+	white-space: nowrap; /* dt가 줄 바꿈 없이 한 줄로 유지되도록 설정 */
+}
+
+.filter_bind  dd {
+	margin: 0;
+	color: #2D65F2;
+	text-align: right; /* dd의 텍스트를 오른쪽 정렬 */
+	flex-grow: 1; /* dd가 남은 공간을 채우도록 설정 */
+}
+
+.user .quote {
+	color: #666;
+	font-size: 14px;
+}
+
+/*  price start */
+.prices {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
+.prices .price_type {
+	flex: 1;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+}
+
+/* 첫 번째 price_type에는 :before를 추가하지 않음 */
+.prices .price_type:not(:first-child):before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #ddd;
+}
+
+/* 세 번째 price_type에는 :after를 추가하지 않음 */
+.prices .price_type:not(:last-child):after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #ddd;
+}
+
+.price_type>p {
+	font-size: 18px;
+	color: #22222280;
+}
+
+.price_type>span {
+	font-size: 26px;
+}
+
+/*  price end */
+
+/* button start  */
+
+.button-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px;
+}
+
+.button-wrapper {
+	box-sizing: border-box;
+	position: relative;
+	width: 266px;
+	height: 100px;
+	background: #FF7575;
+	border: 1px solid #D3D3D3;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 첫 번째 버튼 래퍼에만 적용될 스타일 */
+.button-wrapper.white-background {
+	background: #FFFFFF;
+}
+
+.custom-button {
+
+	background: none;
+	border: none;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+/* 첫 번째 버튼에만 적용될 스타일 */
+.custom-button.black-text {
+	color: black;
+}
+
+.custom-button:hover {
+	/* background: rgba(255, 255, 255, 0.3); */
+	background: rgba(0, 0, 0, 0.1);
+}
+
+/* button end */
+
+
+.final-bid {
+	color: red;
+	font-weight: bold;
+}
+
+/* 추가 */
+
+.detail_bind {
+	border-top: 1px solid black;
+	font-size: 14px;
+	padding: 10px;
+	background-color: rgb(250, 250, 250); 
+}
+
+.detail_addition {
+	align-items: center;
+	display: flex;
+	font-size: 13px;
+	justify-content: space-between;
+	min-height: 20px;
+}
+
+.detail_addition+.detail_addition {
+	margin-top: 10px;
+}
+
+.detail_title {
+	color: #22222280;
+}
+
+.detail_text {
+	color: #222;
+	font-size: 14px;
+	letter-spacing: -.21px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.line-separator {
+	border-top: 1px solid #ddd;
+	margin: 20px 0;
+}
+
+.bid-history {
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+.bid-history table {
+	width: 100%;
+	border: 0;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.table_th {
+	border-bottom: 1px solid #ebebeb;
+	color: rgba(34, 34, 34, .5);
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -.06px;
+	line-height: 14px;
+	padding: 10px;
+	text-align: left
+}
+
+.align_right {
+	text-align: right
+}
+
+.table_td {
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f0;
+	/* 추가 */
+	font-size: 14px;
+	line-height: 17px;
+	padding-top: 9px;
+}
+
+.bid-history .final-bid {
+	color: red;
+	font-weight: bold;
+}
+
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-container {
+	margin-bottom: 40px;
+}
+
+.profile-container h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.profile-container .profile {
+	flex: 1;
+	text-align: center;
+	padding: 20px;
+}
+
+.profile-container .profile img {
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.profile-container .profile p {
+	margin-bottom: 10px;
+}
+
+.profile-container .profile:nth-child(1) {
+	border-right: 1px solid #ddd;
+}
+
+.report-button {
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 진행상황 start */
+.progress-container {
+	margin-top: 20px;
+	background-color: rgb(254, 247, 246); /* 추가 */
+	padding: 24px 20px; /* 추가 */
+}
+
+.progress_title { /* 추가 */
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 12px
+}
+
+.progress-bar-background {
+	width: 100%;
+	background-color: rgb(34, 34, 34, 0.1); /*  #f3f3f3; */
+	padding: 5px 0;
+	border-radius: 5px;
+}
+
+.progress-bar {
+	height: 10px;
+	background-color: #6D6D6D;
+	border-radius: 5px;
+}
+
+.progress-status {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.progress-status span {
+	/* font-weight: normal; */
+	font-size: 14px;
+	line-height: 17px
+}
+
+.progress_item_description {
+	font-size: 13px;
+	overflow: hidden;
+	word-break: keep-all;
+	color: rgba(34, 34, 34, 0.8);
+}
+
+.progress-status .completed {
+	color: red;
+	font-weight: bold;
+}
+/* 진행상황 end */
+.gray-line {
+	border: 0;
+	height: 1px;
+	background-color: #ddd;
+	margin-bottom: 20px;
+}
+
+.prices {
+	padding: 20px;
+	margin: 20px 0;
+}
+
+/* 모달 */
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(34, 34, 34, 0.5);
+	z-index: 1010;
+}
+
+.modal-container {
+	position: relative;
+	width: 599px;
+	height: auto;
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+
+.modal-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.modal-header {
+	font-weight: 700;
+	font-size: 32px;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.modal-profile {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.modal-profile-image {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	background-size: cover;
+	margin-right: 20px;
+}
+
+.modal-profile-image img {
+	width: 80px;
+	height: 80px;
+}
+
+.modal-profile-info .user-type {
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.27);
+}
+
+.modal-profile-info .user-id {
+	font-weight: 600;
+	font-size: 18px;
+	color: #000000;
+}
+
+.modal-profile-info .user-email {
+	font-weight: 400;
+	font-size: 14px;
+	color: rgba(34, 34, 34, 0.5);
+}
+
+.modal-divider {
+	width: 100%;
+	height: 1px;
+	background: #D9D9D9;
+	margin: 20px 0;
+}
+
+.modal-transaction-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.modal-transaction-info div {
+	font-weight: 600;
+	font-size: 18px;
+	color: #D3D3D3;
+}
+
+.modal-transaction-info .modal-transaction-id, .modal-transaction-info  .modal-transaction-date
+	{
+	font-weight: 400;
+	font-size: 18px;
+	color: #000000;
+}
+
+.modal-report-title {
+	font-weight: 600;
+	font-size: 23px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.modal-input-title, .modal-input-content {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	background: #FAFAFA;
+	border: 1px solid #EBEBEB;
+	border-radius: 20px;
+	font-size: 18px;
+	color : #353131db;
+	box-sizing: border-box;
+	resize: none; /* textarea 크기 조절 제거 */
+}
+
+.modal-submit-button {
+	display: block;
+	width: 180px;
+	height: 35px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border: 1px solid #D3D3D3;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgba(34, 34, 34, 0.8);
+	transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
