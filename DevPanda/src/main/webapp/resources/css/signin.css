@@ -542,7 +542,8 @@ input {
 .form-wrap form .button {
     margin: 1em 0;
     padding: .2em 3em;
-    width: auto;
+    /* width: auto; */
+    width :100%;
     display: block;
     background-color: #04BEBD;
     border: none;
