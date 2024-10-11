@@ -514,10 +514,32 @@ input {
     text-align: left;
     width: auto;
 }
+/* 변경 추가 start*/
 .help-action {
     padding: .4em 0 0;
     font-size: .93em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
+
+.help-action-list {
+
+	align-items: flex-start;
+    display: inline-flex;
+    flex: 1;
+}
+ul,li{
+	list-style:none;
+}
+.forgot {
+	display: inline-flex;
+    font-size: 13px;
+    letter-spacing: -.07px;
+    margin: auto;
+    padding: 0 10px;
+}
+/* 변경 추가 end*/
 .form-wrap .tabs-content div[id$="tab-content"] {
     display: none;
 }
