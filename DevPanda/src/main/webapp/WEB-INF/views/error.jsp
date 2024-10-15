@@ -9,7 +9,7 @@
 <script>
 $(function() {
 	$('#homeBtn').click(function() {
-		location.href = '/';
+		location.href = '/devpanda';
 	});
 });
 </script>

@@ -119,10 +119,6 @@
 
 			<!-- LOGIN FORM -->
 			<div class="user">
-				<!-- LOGO -->
-				<!-- <div class="logo">
-					<a href="#"><img src="resources/img/logoS.png" alt=""></a>
-				</div> -->
 				<!-- TOGGLE -->
 				<div id="toggle-wrap">
 					<div id="toggle-terms">
@@ -177,6 +173,7 @@
 								<input type="password" class="input" name="password" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요"> 
 								<input type="submit" class="button" value="Login">
 							</form>
+<<<<<<< Updated upstream
 							<ul class="help-action">
 								<li class="help-action-list">
 									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
@@ -191,6 +188,22 @@
 										class="forgot" href="/signUpPerson">회원가입 </a>
 								</li>
 							</ul>
+=======
+							<div class="help-action">
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
+									<a class="forgot" href="#">비밀번호찾기</a>
+								</p>
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
+									<a class="forgot" href="#">아이디 찾기 </a>
+								</p>
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
+									<a class="signUp" href="${pageContext.request.contextPath}/signUpPerson">개인 회원가입 </a>
+								</p>
+							</div>
+>>>>>>> Stashed changes
 						</div>
 						<!-- TABS CONTENT SIGNUP -->
 						<div id="signup-tab-content">
@@ -199,6 +212,7 @@
 								<input type="password" class="input" name="password" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요"> 
 								<input type="submit" class="button" value="Login">
 							</form>
+<<<<<<< Updated upstream
 						<ul class="help-action">
 								<li class="help-action-list">
 									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
@@ -213,6 +227,22 @@
 										class="forgot" href="/signUpPerson">회원가입 </a>
 								</li>
 							</ul>
+=======
+							<div class="help-action">
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i>
+									<a class="forgot" href="#">비밀번호찾기</a>
+								</p>
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i>
+									<a class="forgot" href="#">아이디 찾기 </a>
+								</p>
+								<p>
+									<i class="fa fa-arrow-left" aria-hidden="true"></i>
+									<a class="forgot" href="#">기업 회원가입 </a>
+								</p>
+							</div>
+>>>>>>> Stashed changes
 						</div>
 					</div>
 				</div>
