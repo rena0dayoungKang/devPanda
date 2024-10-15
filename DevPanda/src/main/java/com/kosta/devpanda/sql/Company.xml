@@ -2,12 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="mapper.person">
-	
-	<!-- person 의 id로 로그인 -->
-	<select id="selectPerson" parameterType="String" resultType="person">
+<mapper namespace="mapper.company">
+
+	<!-- company의 id로 로그인 -->
+	<select id="selectCompany" parameterType="String" resultType="person">
 		<![CDATA[
-			select * from person where id=#{id}
+			select * from company where id=#{id}
 		]]>
 	</select>
 

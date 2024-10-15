@@ -11,8 +11,7 @@
 				<value>classpath*:com/kosta/devpanda/sql/*.xml</value>
 			</list>
 		</property>
-		<property name="configLocation"
-			value="/config/mybatis-alias.xml"></property>
+		<property name="configLocation" value="/config/mybatis-alias.xml"></property>
 	</bean>
 
 	<bean id="sqlSession"
