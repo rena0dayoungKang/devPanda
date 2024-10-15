@@ -14,7 +14,7 @@ public class PersonDaoImpl implements PersonDao {
 	
 	@Override
 	public Person selectPerson(String id) throws Exception {
-		return sqlSession.selectOne("mapper.person.selectPerson", id);
+		return sqlSession.selectOne("mapper.person.selectOnePerson", id);
 	}
 	
 	

@@ -40,6 +40,7 @@ public class MemberController {
 	@RequestMapping(value="/personLogin", method=RequestMethod.POST)
 	public String login(@RequestParam("id") String id, @RequestParam("password") String password, Model model) {
 		try {
+			System.out.println(id);
 			Person person = personService.loginPerson(id, password);
 			person.setPassword("");
 			session.setAttribute("person", person);

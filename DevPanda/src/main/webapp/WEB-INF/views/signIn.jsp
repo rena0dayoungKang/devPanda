@@ -177,20 +177,20 @@
 								<input type="password" class="input" name="password" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요"> 
 								<input type="submit" class="button" value="Login">
 							</form>
-							<div class="help-action">
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
-									<a class="forgot" href="#">비밀번호찾기</a>
-								</p>
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
-									<a class="forgot" href="#">아이디 찾기 </a>
-								</p>
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i> 
-									<a class="forgot" href="#">회원가입 </a>
-								</p>
-							</div>
+							<ul class="help-action">
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/SearchPassword">비밀번호찾기</a>
+								</li>
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/SearchId">아이디 찾기 </a>
+								</li>
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/signUpPerson">회원가입 </a>
+								</li>
+							</ul>
 						</div>
 						<!-- TABS CONTENT SIGNUP -->
 						<div id="signup-tab-content">
@@ -199,20 +199,20 @@
 								<input type="password" class="input" name="password" id="user_pass" autocomplete="off" placeholder="패스워드를 입력하세요"> 
 								<input type="submit" class="button" value="Login">
 							</form>
-							<div class="help-action">
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i>
-									<a class="forgot" href="#">비밀번호찾기</a>
-								</p>
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i>
-									<a class="forgot" href="#">아이디 찾기 </a>
-								</p>
-								<p>
-									<i class="fa fa-arrow-left" aria-hidden="true"></i>
-									<a class="forgot" href="#">회원가입 </a>
-								</p>
-							</div>
+						<ul class="help-action">
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/SearchPassword">비밀번호찾기</a>
+								</li>
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/SearchId">아이디 찾기 </a>
+								</li>
+								<li class="help-action-list">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i><a
+										class="forgot" href="/signUpPerson">회원가입 </a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
